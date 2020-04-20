@@ -7,9 +7,7 @@
 #include <iostream>
 #include <string.h>
 
-
 #include "linux_parser.h"
-
 #include "process.h"
 
 using std::string;
@@ -20,10 +18,10 @@ Process::Process(int pid) : pid_(pid) {
   CpuUtilization();
 }
 
-// TODO: Return this process's ID
+// DONE: Return this process's ID
 int Process::Pid() { return pid_; }
 
-// TODO: Return this process's CPU utilization
+// DONE: Return this process's CPU utilization
 float Process::CpuUtilization() { 
   std::string line, value;
   std::vector<string> utilization;
@@ -60,20 +58,19 @@ float Process::CpuUtilization() {
   return cpu_usage; 
 }
 
-// TODO: Return the command that generated this process
+// DONE: Return the command that generated this process
 string Process::Command() { return LinuxParser::Command(pid_); }
 
-// TODO: Return this process's memory utilization
+// DONE: Return this process's memory utilization
 string Process::Ram() { return LinuxParser::Ram(pid_); }
 
-// TODO: Return the user (name) that generated this process
+// DONE: Return the user (name) that generated this process
 string Process::User() { return LinuxParser::User(pid_); }
 
-// TODO: Return the age of this process (in seconds)
+// DONE: Return the age of this process (in seconds)
 long int Process::UpTime() { return LinuxParser::UpTime(pid_); }
 
-// TODO: Overload the "less than" comparison operator for Process objects
-// REMOVE: [[maybe_unused]] once you define the function
+// DONE: Overload the "less than" comparison operator for Process objects
 bool Process::operator<(Process const& a) const {  
   return a.cpu_ < this->cpu_;
 }

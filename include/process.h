@@ -17,7 +17,7 @@ class Process {
   long int UpTime();                       // TODO: See src/process.cpp
   bool operator<(Process const& a) const;  // TODO: See src/process.cpp
 
-  // TODO: Declare any necessary private members
+  // DONE: Declare any necessary private members
  private:
   std::string kProcDirectory{"/proc/"};
   std::string kStatFilename{"/stat"};

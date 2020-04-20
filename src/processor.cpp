@@ -20,8 +20,8 @@ float Processor::Utilization() {
   float irq = stof(utilization[5]);
   float softirq = stof(utilization[6]);
   float steal = stof(utilization[7]);
-  float guest = stof(utilization[8]);
-  float guest_nice = stof(utilization[9]);
+//   float guest = stof(utilization[8]);
+//   float guest_nice = stof(utilization[9]);
 
   
   float PrevIdle = previdle + previowait;
