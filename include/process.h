@@ -19,8 +19,8 @@ class Process {
 
   // TODO: Declare any necessary private members
  private:
-  const std::string kProcDirectory{"/proc/"};
-  const std::string kStatFilename{"/stat"};
+  std::string kProcDirectory{"/proc/"};
+  std::string kStatFilename{"/stat"};
   int pid_;
   float cpu_;
 };
