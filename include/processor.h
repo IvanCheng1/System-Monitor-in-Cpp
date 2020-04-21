@@ -4,9 +4,8 @@
 
 class Processor {
  public:
-  float Utilization();  // DONE: See src/processor.cpp
+  float Utilization();
 
-  // DONE: Declare any necessary private members
  private:
   const std::string kProcDirectory{"/proc/"};
   const std::string kStatFilename{"/stat"};

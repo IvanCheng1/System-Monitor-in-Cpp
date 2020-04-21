@@ -4,11 +4,11 @@
 #include <string>
 
 namespace Format {
-std::string ElapsedTime(long times);  // DONE: See src/format.cpp
+std::string ElapsedTime(long times);
 };                                    // namespace Format
 
 namespace Format {
-std::string FormatTime(int time);  
-}; 
+std::string FormatTime(int time);
+};
 
 #endif
